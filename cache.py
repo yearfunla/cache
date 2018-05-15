@@ -13,9 +13,9 @@ class cache:
         self.cache = dict()
     def update(self,new_key):
         '''
-        Creating a update method to handle the counter update for the existing key in the cache
+        Creating an update method to handle the counter update for the existing key in the cache
         :param new_key: is the key that we newly access which conter is already been handled,
-               will focus on the updating for keys other than new_key
+               will focus on updating counters for keys other than new_key
         '''
         # loop in the cache for finding and updating the other key
         for key in self.cache.keys():
@@ -101,6 +101,7 @@ c1.write('c','5')
 c1.read('d')
 print "Trying to revisit d and see if the cache stayed the same ot not"
 c1.read('d')
+c1.read('c')
 print "Trying to access a invalid key"
 c1.read('e')
 c1.write('e','6')
