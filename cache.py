@@ -1,6 +1,6 @@
 class cache:
     '''
-    The class is creating the cache obj with max 3 stack to store the cache
+    The class is creating the cache obj with max 3 spaces to store the cache
     '''
     def __init__(self):
         '''
