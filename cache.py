@@ -103,3 +103,4 @@ print "Trying to revisit d and see if the cache stayed the same ot not"
 c1.read('d')
 print "Trying to access a invalid key"
 c1.read('e')
+c1.write('e','6')
